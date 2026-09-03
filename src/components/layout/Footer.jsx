@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Github, Linkedin, Twitter, Instagram, Mail, ArrowUpRight } from 'lucide-react';
+import { Github, Linkedin, Twitter, Instagram, Mail } from 'lucide-react';
 
 export function Footer({ siteSettings, profile }) {
   const currentYear = new Date().getFullYear();
@@ -206,21 +206,6 @@ export function Footer({ siteSettings, profile }) {
               <span>{siteSettings?.contact_email || 'hello@jerrydev.io'}</span>
             </a>
 
-            <div style={{ marginTop: '1.5rem' }}>
-              <Link
-                to="/admin/dashboard"
-                style={{
-                  fontSize: '0.78rem',
-                  color: 'var(--text-muted)',
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: '0.35rem'
-                }}
-              >
-                <span>Access CMS Dashboard</span>
-                <ArrowUpRight size={13} />
-              </Link>
-            </div>
           </div>
         </div>
 
